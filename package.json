@@ -3,7 +3,11 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://Jflatley487.github.io/20-react-portfolio",
+  "homepage": "https://jflatley487.github.io/20-react-portfolio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jflatley487/20-react-portfolio.git"
+  },
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.4.4",
@@ -24,7 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b main -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
