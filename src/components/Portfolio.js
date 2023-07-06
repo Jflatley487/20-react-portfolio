@@ -1,39 +1,41 @@
 import React from 'react';
 import Project from './Project';
 
-function Portfolio() {
+
     const projects = [
         {
-            title: "Project 1",
-            image: "/path/to/project1-image.jpg",
-            deployedLink: "https://example.com",
-            githubLink: "https://github.com/example"
+            id: 0,
+            title: "recAPIs",
+            image: "https://gatheringdreams.com/wp-content/uploads/2019/03/healthy-meal-prep-2022-square.jpg",
+            live: "https://jflatley487.github.io/RecAPIs-project/",
+            repo: "https://github.com/Jflatley487/RecAPIs-project.git"
         },
         {
-            title: "Project 2",
-            image: "/path/to/project2-image.jpg",
-            deployedLink: "https://example.com",
-            githubLink: "https://github.com/example"
+            id: 1,
+            title: "BarkBook",
+            image: "https://corgiplanet.com/wp-content/uploads/2022/03/Corgi-Planet-Timur-Garifov-2.jpg",
+            live: "https://avanibarkbook.herokuapp.com/",
+            repo: "https://github.com/Jflatley487/BarkBook.git"
         },
         {
-            title: "Project 3",
-            image: "/path/to/project3-image.jpg",
-            deployedLink: "https://example.com",
-            githubLink: "https://github.com/example"
+            id: 2,
+            title: "HangTime -coming soon",
+            image: "https://tensionclimbing.com/wp-content/uploads/2022/11/Honestone-6-scaled.jpg",
+            live: "https://example.com",
+            repo: "https://github.com/example"
         }
 
     ];
 
+function Portfolio() {
     return (
-        <section>
-            <h1>Portfolio</h1>
-            <div className='projects-list'>
-                {projects.map((project, index) => (
-                    <Project key={index} project={project} />
-                ))}
-            </div>
-        </section>
+        <div>
+        <p className="content is-medium">Portfolio</p>
+        <hr />
+  
+        <Project projects={projects} />
+      </div>
     );
-}
+  }
 
 export default Portfolio;
