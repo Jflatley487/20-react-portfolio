@@ -17,7 +17,6 @@ function Footer() {
                 >
                     linkedin
                 </a>{" "}
-                |{" "}
                 </p>
             </div>
         </footer>
